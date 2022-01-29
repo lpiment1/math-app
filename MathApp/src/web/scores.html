@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Math App3 - WeCodeEdu</title>  
+  <meta charset="utf-8" />
+  <meta name="description" content="CNIT195 WeCodeEdu Math App">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base_styles.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/sessionStorage.js"></script>
+  <script src="js/localStorage.js"></script>
+  <script src="js/score.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="layer hide"></div>
+  <div class="dialog"></div>
+<header>
+    <img src="images/logo.png" width="121" height="96">
+    <h1>Math Game</h1>
+    <img class="NoDisplayMobile" src="images/logo.png" width="121" height="96"> 
+
+</header>
+
+
+<nav>
+  <div class="btnbar">
+    <div class="pill_btn"><a href="index.html">Home</a></div>
+    <div class="pill_btn"><a href="select_game.html">New Game</a></div>
+    <div class="pill_btn"><a href="scores.html">Scores</a></div>
+  </div>
+  <div class="user pill">
+    <div class="avatar"><img src="./images/user_img.png" alt="avatar" width="30" height="30"></div>
+    <div class="user_login">
+      <div id="curr_user">Guest</div>
+      <div>
+        <a id="new_player" href="login.html">New Player?</a>
+        <a id="logout" href="index.html">log out</a>
+      </div>
+    </div>
+  </div>
+ 
+</nav>
+
+
+<main>
+  <div id="mainA">
+    <!-- <button id="change_user">Switch User</button> -->
+    <h1 id="score_name">Congratulations</h1>
+    <img id="score_img" src="./images/user_img.png" alt="avatar" width="50%" style="margin: 10px;">
+    <a id="score_again" href="select_game.html">Play Again?</a>
+  </div>
+  
+  <div id="mainB">
+    
+    <table>
+      <thead></thead>
+
+      <tbody>
+        <tr>
+          <th>Quiz achievement:</th>
+        </tr>
+        <tr>
+          <td>Best Quiz Score: </td>
+          <td id="best_score"></td>
+        </tr>
+        <tr>
+          <td>Average Score: </td>
+          <td id="average_score"></td>
+        </tr>
+        <tr>
+          <td>Completed Quiz:</td>
+          <td id="completed_quiz"></td>
+        </tr>
+        <tr>
+          <th>Practice achievement:</th>
+        </tr>
+        <tr>
+          <td>Completed Addition:</td>
+          <td id="completed_add"></td>
+        </tr>
+        <tr>
+          <td>Completed Subtraction:</td>
+          <td id="completed_sub"></td>
+        </tr>
+        <tr>
+          <td>Completed Multiplication:</td>
+          <td id="completed_mul"></td>
+        </tr>
+        <tr>
+          <td>Completed Division:</td>
+          <td id="completed_div"></td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="reminder"></p>
+  </div>
+  
+</main>
+
+
+<footer>
+  <div id="footLeft">
+    <p><a href="about.html">Kids Are Us</a></p>
+    <p>Copyright &copy;2021</p>
+  </div>
+  
+  <div id="footMid">
+    <img class="footSocial" src="images/facebook.svg" alt="Facebook Logo">
+    <img class="footSocial" src="images/instagram.svg" alt="Instagram Logo">
+    <img class="footSocial" src="images/twitter.svg" alt="Twitter Logo">
+  </div>
+  
+  <div id="footRight">
+    <p><a href="mailto:kidsareus@nomail.obx">Email Us</a></p>
+    <p>1 800 555 1212</p>
+  </div>
+  
+  <div class="break"></div>    
+</footer>
+
+
+
+</body>
+
+</html>
